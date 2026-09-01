@@ -14,8 +14,6 @@
     .cv-toolbar p { margin: 5px 0 0; color: var(--muted); }
     .cv-actions { display: flex; gap: 10px; flex-wrap: wrap; }
     .pdf-frame { width: 100%; height: calc(100vh - 165px); min-height: 650px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
-    .loading-card { padding: 50px 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); text-align: center; }
-    .loading-card p { color: var(--muted); }
     @media (max-width: 650px) { .pdf-frame { height: 75vh; min-height: 520px; } .cv-actions .button { width: auto; } }
   </style>
 </head>
@@ -29,45 +27,11 @@
       </div>
       <div class="cv-actions">
         <a class="button secondary" href="index.html">Back to Portfolio</a>
-        <a class="button primary" id="downloadCv" href="#" download="Dewald_van_Stryp_IT_CV.pdf">Download CV</a>
+        <a class="button primary" href="Dewald_van_Stryp_IT_CV.pdf" download>Download CV</a>
       </div>
     </div>
 
-    <div id="loading" class="loading-card">
-      <h2 style="font-size:1.6rem;">Loading CV…</h2>
-      <p>I’m preparing the PDF for viewing.</p>
-    </div>
-    <iframe id="pdfFrame" class="pdf-frame" title="Dewald van Stryp CV" hidden></iframe>
+    <iframe class="pdf-frame" src="Dewald_van_Stryp_IT_CV.pdf#view=FitH" title="Dewald van Stryp CV"></iframe>
   </main>
-
-  <script>
-    async function loadCv() {
-      const loading = document.getElementById('loading');
-      const frame = document.getElementById('pdfFrame');
-      const download = document.getElementById('downloadCv');
-
-      try {
-        const response = await fetch('Dewald_van_Stryp_IT_CV.pdf', { cache: 'no-store' });
-        if (!response.ok) throw new Error('Could not fetch CV data');
-
-        const base64 = (await response.text()).replace(/\s+/g, '');
-        const binary = atob(base64);
-        const bytes = new Uint8Array(binary.length);
-        for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-
-        const blob = new Blob([bytes], { type: 'application/pdf' });
-        const url = URL.createObjectURL(blob);
-
-        frame.src = url;
-        download.href = url;
-        loading.hidden = true;
-        frame.hidden = false;
-      } catch (error) {
-        loading.innerHTML = '<h2 style="font-size:1.6rem;">CV could not be loaded</h2><p>Please return to the portfolio and try again.</p><a class="button secondary" href="index.html">Back to Portfolio</a>';
-      }
-    }
-
-    loadCv();
-  </script>
 </body>
 </html>
