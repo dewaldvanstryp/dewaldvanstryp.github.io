@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dewald van Stryp — aspiring IT Support Technician with hands-on homelab, GLPI Help Desk, Windows, Linux, networking, virtualization, and troubleshooting experience." />
+  <meta name="description" content="Dewald van Stryp — aspiring IT Support Technician with a hands-on Proxmox homelab covering Windows, Active Directory, Linux, networking, GLPI Help Desk, self-hosting, local AI, automation, and troubleshooting." />
   <meta name="robots" content="index, follow" />
   <meta name="google-site-verification" content="vtlkS2W6An80JhJ-5EMBuMErXIGuyCUTJz1DuAGrqAs" />
   <meta name="theme-color" content="#07111c" />
@@ -12,13 +12,13 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Dewald van Stryp | IT Support & Homelab" />
-  <meta property="og:description" content="IT support portfolio covering Windows, Linux, networking, Proxmox, GLPI Help Desk workflows, PC hardware, and troubleshooting." />
+  <meta property="og:description" content="IT support portfolio covering Windows, Active Directory, Linux, networking, Proxmox, GLPI Help Desk, self-hosting, local AI, automation, PC hardware, and troubleshooting." />
   <meta property="og:url" content="https://dewaldvanstryp.github.io/" />
   <meta property="og:site_name" content="Dewald van Stryp IT Portfolio" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Dewald van Stryp | IT Support & Homelab" />
-  <meta name="twitter:description" content="IT support portfolio covering Windows, Linux, networking, Proxmox, GLPI Help Desk workflows, PC hardware, and troubleshooting." />
+  <meta name="twitter:description" content="Hands-on IT portfolio built around a real Proxmox homelab with Windows, Active Directory, Linux, networking, Help Desk, self-hosting, and automation labs." />
 
   <script type="application/ld+json">
   {
@@ -37,13 +37,17 @@
       "IT Service Management",
       "GLPI",
       "Windows",
+      "Active Directory",
       "Linux",
       "Networking",
       "Proxmox VE",
       "PC Hardware",
       "Virtualization",
       "Troubleshooting",
-      "Self-hosting"
+      "Self-hosting",
+      "Home Assistant",
+      "Local AI",
+      "Automation"
     ]
   }
   </script>
@@ -61,6 +65,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#homelab">Homelab</a>
         <a href="#projects">Projects</a>
         <a href="cv.html">CV</a>
         <a href="#contact">Contact</a>
@@ -75,18 +80,17 @@
         <p class="eyebrow">Pretoria, South Africa</p>
         <h1>Building practical IT skills through real systems.</h1>
         <p class="hero-text">
-          I’m an aspiring IT Support Technician with hands-on experience in Windows, Linux,
-          networking, PC hardware, virtualization, self-hosting, troubleshooting, and GLPI Help Desk workflows through my own homelab.
+          I’m an aspiring IT Support Technician building hands-on experience through my own Proxmox homelab. I work with Windows, Active Directory, Linux, networking, virtualization, Help Desk workflows, self-hosted services, local AI tooling, automation, PC hardware, and troubleshooting.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="mailto:dewaldvanstryp.it@gmail.com">Email Me</a>
           <a class="button secondary" href="cv.html">View CV</a>
-          <a class="button secondary" href="https://github.com/dewaldvanstryp" target="_blank" rel="noreferrer">View GitHub</a>
+          <a class="button secondary" href="https://github.com/dewaldvanstryp/homelab" target="_blank" rel="noreferrer">Explore Homelab</a>
           <a class="button secondary" href="https://www.linkedin.com/in/dewald-van-stryp-269820373/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <div class="status-row" aria-label="Current status">
           <span class="status-dot"></span>
-          <span>Available for junior IT support opportunities</span>
+          <span>CompTIA A+ in progress • Homelab active and evolving</span>
         </div>
       </div>
     </section>
@@ -99,18 +103,17 @@
       <div class="about-grid">
         <div class="card large-card">
           <p>
-            I grew up around computers and enjoy understanding how systems work. My homelab gives me a practical environment
-            where I can deploy services, test networking ideas, troubleshoot failures, and learn how Windows and Linux systems behave in the real world.
+            I enjoy understanding how systems work and learning through hands-on practice. My homelab gives me a real environment where I can deploy services, build Windows and Linux labs, test networking ideas, practise support workflows, troubleshoot failures, and document what I learn.
           </p>
           <p>
-            I’m currently working toward my <strong>CompTIA A+</strong> and looking for an opportunity to start my professional career in IT support.
+            I’m currently working toward my <strong>CompTIA A+ Core 1 & Core 2</strong> while building practical experience that is relevant to IT Support, Help Desk, junior systems administration, and networking roles.
           </p>
         </div>
         <div class="quick-facts">
-          <div class="fact"><strong>Focus</strong><span>IT Support & Help Desk</span></div>
+          <div class="fact"><strong>Career focus</strong><span>IT Support & Help Desk</span></div>
           <div class="fact"><strong>Currently learning</strong><span>CompTIA A+ Core 1 & Core 2</span></div>
-          <div class="fact"><strong>Environment</strong><span>Homelab & self-hosted services</span></div>
-          <div class="fact"><strong>Interests</strong><span>Networking, Linux, virtualization</span></div>
+          <div class="fact"><strong>Lab platform</strong><span>Proxmox VE</span></div>
+          <div class="fact"><strong>Hands-on focus</strong><span>Windows, Linux, networking & troubleshooting</span></div>
         </div>
       </div>
     </section>
@@ -119,54 +122,116 @@
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">Technical skills</p>
-          <h2>Hands-on areas I work with.</h2>
+          <h2>Hands-on areas I actively work with.</h2>
         </div>
         <div class="skill-grid">
-          <article class="card skill-card"><h3>IT Support & Help Desk</h3><p>Windows troubleshooting, PC hardware, basic diagnostics, user support, GLPI ticket workflows, documentation, and escalation practice.</p></article>
-          <article class="card skill-card"><h3>Networking</h3><p>IP addressing, DNS, DHCP, routing concepts, firewalls, SMB, VPNs, and network troubleshooting.</p></article>
-          <article class="card skill-card"><h3>Linux</h3><p>Linux servers and desktops, services, permissions, logs, command-line troubleshooting, and self-hosting.</p></article>
-          <article class="card skill-card"><h3>Virtualization</h3><p>Proxmox VE, virtual machines, LXC containers, storage, passthrough experiments, and lab environments.</p></article>
-          <article class="card skill-card"><h3>Self-hosting</h3><p>Home Assistant, Jellyfin, Pi-hole, Docker services, SMB file sharing, and other homelab services.</p></article>
-          <article class="card skill-card"><h3>PC Hardware</h3><p>PC building, component installation, RAM and storage troubleshooting, upgrades, and hardware diagnosis.</p></article>
+          <article class="card skill-card"><h3>IT Support & Help Desk</h3><p>Windows troubleshooting, PC hardware, user support, GLPI ticket workflows, documentation, incident handling, and escalation practice.</p></article>
+          <article class="card skill-card"><h3>Windows & Active Directory</h3><p>Windows 11 client administration, domain-controller lab work, identity and directory concepts, client/domain testing, and support scenarios.</p></article>
+          <article class="card skill-card"><h3>Networking</h3><p>IP addressing, DNS, DHCP, routing concepts, firewalls, SMB, VPN and remote-access labs, and network troubleshooting.</p></article>
+          <article class="card skill-card"><h3>Linux</h3><p>Linux servers and desktops, services, permissions, logs, command-line troubleshooting, and self-hosted workloads.</p></article>
+          <article class="card skill-card"><h3>Virtualization</h3><p>Proxmox VE, virtual machines, LXC containers, storage, service isolation, passthrough experiments, and lab environments.</p></article>
+          <article class="card skill-card"><h3>Self-hosting & Automation</h3><p>Jellyfin, Immich, Home Assistant, Pi-hole, Uptime Kuma, GLPI, Open WebUI, Hermes Agent, Firecrawl, and related homelab services.</p></article>
+          <article class="card skill-card"><h3>Storage & File Sharing</h3><p>ZFS concepts, Proxmox storage, SMB file sharing, permissions, shared storage, and capacity planning.</p></article>
+          <article class="card skill-card"><h3>PC Hardware</h3><p>PC building, component installation, RAM and storage troubleshooting, upgrades, hardware diagnosis, and practical repair workflows.</p></article>
+          <article class="card skill-card"><h3>Troubleshooting</h3><p>Structured fault finding across hardware, operating systems, networks, virtual machines, containers, services, and user-facing issues.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section container">
+    <section id="homelab" class="section container">
       <div class="section-heading">
-        <p class="eyebrow">Featured work</p>
-        <h2>Projects that show how I learn.</h2>
+        <p class="eyebrow">Current homelab</p>
+        <h2>A real Proxmox environment I use every day to learn.</h2>
       </div>
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div>
-            <span class="project-label">Featured project</span>
-            <h3>Homelab Documentation</h3>
-            <p>A public, sanitized record of my real Proxmox homelab including virtual machines, containers, networking, storage, self-hosted services, monitoring, home automation, GLPI Help Desk training, and troubleshooting notes.</p>
+
+      <div class="stats-grid" aria-label="Homelab summary">
+        <div class="stat-card"><strong>17</strong><span>VMs + LXCs documented</span></div>
+        <div class="stat-card"><strong>11</strong><span>Linux containers</span></div>
+        <div class="stat-card"><strong>6</strong><span>Virtual machines</span></div>
+        <div class="stat-card"><strong>4</strong><span>Storage targets</span></div>
+      </div>
+
+      <div class="inventory-grid">
+        <article class="inventory-card">
+          <span class="project-label">Linux containers</span>
+          <h3>Services & infrastructure</h3>
+          <div class="tag-list">
+            <span>101 Jellyfin</span><span>102 debianSMB</span><span>103 Uptime Kuma</span><span>104 Homepage</span><span>108 Pi-hole</span><span>109 Immich</span><span>112 GLPI</span><span>113 Remote Gateway</span><span>114 Hermes Agent</span><span>115 Firecrawl</span><span>116 Open WebUI</span>
           </div>
-          <a class="text-link" href="https://github.com/dewaldvanstryp/homelab" target="_blank" rel="noreferrer">Explore the repository →</a>
         </article>
-        <article class="project-card"><span class="project-label">Home infrastructure</span><h3>Self-hosted services</h3><p>Running and maintaining services such as Jellyfin, SMB storage, Pi-hole, Home Assistant, and Linux-based workloads.</p></article>
-        <article class="project-card"><div><span class="project-label">Help Desk training</span><h3>GLPI Help Desk Lab</h3><p>A self-hosted ITSM environment for practising ticket triage, incident and request handling, user communication, internal notes, solution documentation, troubleshooting, and escalation decisions.</p></div><a class="text-link" href="https://github.com/dewaldvanstryp/homelab/blob/main/docs/glpi-helpdesk.md" target="_blank" rel="noreferrer">View the Help Desk lab →</a></article>
+        <article class="inventory-card">
+          <span class="project-label">Virtual machines</span>
+          <h3>Operating systems & lab environments</h3>
+          <div class="tag-list">
+            <span>100 Home Assistant OS</span><span>105 OPNsense</span><span>106 Linux Test</span><span>107 Omarchy</span><span>110 AD-DC01</span><span>111 Windows 11</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="homelab-note card">
+        <p>The public documentation is deliberately sanitized. It shows the technologies, roles, architecture, and lessons learned without publishing passwords, keys, private endpoints, or unnecessary internal addressing.</p>
+        <a class="text-link" href="https://github.com/dewaldvanstryp/homelab" target="_blank" rel="noreferrer">View the full homelab documentation →</a>
       </div>
     </section>
 
-    <section class="section alt-section">
-      <div class="container learning-wrap">
-        <div class="section-heading"><p class="eyebrow">Currently learning</p><h2>CompTIA A+ and practical Help Desk workflows.</h2></div>
-        <div class="learning-card"><div><h3>CompTIA A+ & GLPI Practice</h3><p>Studying Core 1 and Core 2 while practising structured ticket handling, troubleshooting documentation, user communication, and escalation in my GLPI lab.</p></div><span class="learning-badge">In progress</span></div>
+    <section id="projects" class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured work</p>
+          <h2>Projects that show how I learn.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div>
+              <span class="project-label">Featured project</span>
+              <h3>Homelab Documentation</h3>
+              <p>A public, sanitized record of my real Proxmox homelab including Windows and Active Directory labs, Linux workloads, networking, storage, self-hosted services, monitoring, home automation, Help Desk practice, AI tooling, and troubleshooting notes.</p>
+            </div>
+            <a class="text-link" href="https://github.com/dewaldvanstryp/homelab" target="_blank" rel="noreferrer">Explore the repository →</a>
+          </article>
+
+          <article class="project-card">
+            <div><span class="project-label">Windows administration</span><h3>Active Directory Lab</h3><p>A Windows lab with an Active Directory domain controller and Windows 11 client for learning directory services, identity, client administration, domain concepts, and realistic support scenarios.</p></div>
+          </article>
+
+          <article class="project-card">
+            <div><span class="project-label">Help Desk training</span><h3>GLPI Help Desk Lab</h3><p>A self-hosted ITSM environment for practising ticket triage, incident and request handling, user communication, internal notes, solution documentation, troubleshooting, and escalation decisions.</p></div>
+            <a class="text-link" href="https://github.com/dewaldvanstryp/homelab/blob/main/docs/glpi-helpdesk.md" target="_blank" rel="noreferrer">View the Help Desk lab →</a>
+          </article>
+
+          <article class="project-card">
+            <div><span class="project-label">AI & automation</span><h3>Local AI Tooling Lab</h3><p>Experimenting with Hermes Agent, Firecrawl, and Open WebUI to learn agent workflows, retrieval, automation, local-model interfaces, and how AI tooling can fit into a self-hosted environment.</p></div>
+          </article>
+
+          <article class="project-card">
+            <div><span class="project-label">Networking & remote access</span><h3>Remote Gateway Lab</h3><p>A dedicated environment for remote-access and networking experiments alongside OPNsense, Pi-hole, DNS, routing, firewall, and connectivity troubleshooting practice.</p></div>
+          </article>
+
+          <article class="project-card">
+            <div><span class="project-label">Self-hosting</span><h3>Home Infrastructure</h3><p>Running and maintaining services including Jellyfin, Immich, SMB storage, Pi-hole, Home Assistant, Uptime Kuma, Homepage, and Linux-based workloads.</p></div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section container contact-section">
-      <p class="eyebrow">Contact</p>
-      <h2>Looking for a junior IT support opportunity.</h2>
-      <p>I’m interested in entry-level and junior IT Support / Help Desk opportunities where I can keep learning while contributing practical troubleshooting skills.</p>
-      <div class="hero-actions contact-actions">
-        <a class="button primary" href="mailto:dewaldvanstryp.it@gmail.com">dewaldvanstryp.it@gmail.com</a>
-        <a class="button secondary" href="cv.html">View CV</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/dewald-van-stryp-269820373/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="button secondary" href="https://github.com/dewaldvanstryp" target="_blank" rel="noreferrer">GitHub Profile</a>
+    <section class="section container">
+      <div class="learning-wrap">
+        <div class="section-heading"><p class="eyebrow">Currently learning</p><h2>CompTIA A+ backed by practical lab work.</h2></div>
+        <div class="learning-card"><div><h3>CompTIA A+ Core 1 & Core 2</h3><p>Studying the certification material while reinforcing it through real Windows, Linux, networking, hardware, virtualization, Help Desk, and troubleshooting work in my homelab.</p></div><span class="learning-badge">In progress</span></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section contact-section">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2>Building toward a career in IT support.</h2>
+        <p>I’m focused on developing strong practical skills for entry-level and junior IT Support / Help Desk work, with a growing interest in systems, networking, and infrastructure.</p>
+        <div class="hero-actions contact-actions">
+          <a class="button primary" href="mailto:dewaldvanstryp.it@gmail.com">dewaldvanstryp.it@gmail.com</a>
+          <a class="button secondary" href="cv.html">View CV</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/dewald-van-stryp-269820373/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/dewaldvanstryp" target="_blank" rel="noreferrer">GitHub Profile</a>
+        </div>
       </div>
     </section>
   </main>
